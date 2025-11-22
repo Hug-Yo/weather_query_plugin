@@ -1,0 +1,13 @@
+{
+  "manifest_version": 1,
+  "name": "简单天气查询插件",
+  "version": "1.0.0",
+  "description": "支持查询指定城市(中国大陆)的实时天气和预报天气",
+  "author": {
+    "name": "Hug_Yo"
+  },
+  "license":"MIT",
+  "host_application": {
+    "min_version": "0.11.3"
+  }
+}
