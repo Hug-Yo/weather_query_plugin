@@ -382,6 +382,7 @@ class ForecastWeatherCommand(BaseCommand):
         nightpower = weather_info.get("nightpower")
         reporttime = datetime.strptime(reporttime, "%Y-%m-%d %H:%M:%S")
         reporttime = reporttime.strftime("%Y-%m-%d")
+        delta_temp = abs(int(daytemp) - int(nighttemp))
         date = weather_info.get("date")
         result = f"""🌆{province}{city}天气预报
 ==============
@@ -390,12 +391,13 @@ class ForecastWeatherCommand(BaseCommand):
 🌡️日间气温:{daytemp}℃
 💨日间风向:{daywind}
 🌀日间风速:{daypower}级
------------------------
+-------------------
 🌙夜间天气:{nightweather}
 🌡️夜间气温:{nighttemp}℃
 💨夜间风向:{nightwind}
 🌀夜间风速:{nightpower}级
------------------------
+-------------------
+🔥❄️温差:{delta_temp}
 📅报告日期:{reporttime}
 ==============
 """.strip()
