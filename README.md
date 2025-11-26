@@ -63,7 +63,7 @@ adcode_url = "https://restapi.amap.com/v3/geocode/geo"
 
 `/weather <city> <date>`
 
-<img src="./images/weather-forecast-example.png" alt="示例" width="350" height="200">
+<img src="./images/weather-forecast-example.png" alt="示例" width="400" height="300">
 
 
 
